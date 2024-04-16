@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Webpage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        #bgvid {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 90%;
+    height: 90%;
+    z-index: -100;
+    background-size: cover;
+}
+
+        /* Navigation Bar */
+        nav {
+            background-color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color:greenyellow;
+            text-decoration: none;
+        }
+
+        /* Search Bar */
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+           
+            
+        }
+        .search-container h1 {
+            color: #ddd; /* Dark white color */
+            margin-right:30px;
+             margin-top:10px;
+        }
+
+        .search-container input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+            margin-left:35%; 
+            margin-top:15%;
+           
+        }
+
+        .search-container button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .search-container button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+    nav {
+      max-width: var(--max-width);
+      margin: auto;
+      padding: 2rem 1rem;
+      display: flex;
+      align-items: center; /* Align items vertically */
+      justify-content: space-between;
+    }    
+    .nav__logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #00F000;
+      display: inline-block; /* Ensure vertical alignment */
+      margin-left:120px;
+    }
+
+    .nav__links {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .link a {
+      font-weight: 500;
+      color: var(--text-light);
+      transition: 0.3s;
+    }
+
+    .link a:hover {
+      /*color: var(--primary-color);*/
+       color:greenyellow;
+    }  
+  
+    </style>
+</head>
+<body>
+    <video autoplay loop muted id="bgvid">
+        <source src="pics/video.mp4" type="video/mp4">
+    </video>
+    <!-- Navigation Bar -->
+    <nav>
+    <div class="nav__logo">Mr.travel</div>
+    <ul class="nav__links">
+      <li class="link"><a href="/">Home</a></li>
+      <li class="link"><a href="/partner">About Us</a></li>
+      <li class="link"><a href="/login">Login</a></li>
+      <li class="link"><a href="#">Contact Us</a></li>
+       <li class="link"><a href="/search"><i class="fas fa-search"></i> Search</a></li>
+    </ul>
+  </nav>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <form action="/search" method="post">
+        <marquee scrollamount="15"><h1>Search Your Next Destination...</h1></marquee>
+            <input type="text" name="location" placeholder="Enter location" required>
+            <button type="submit"><i class="bi bi-search"></i> Submit</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap Icons CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/brands.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/solid.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/fontawesome.js"></script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    {{>header}}
+    
+    <script src="app.js"></script>
+    <header>
+        <nav>
+    <h3> Mr.travel</h3>
+    <ul>
+        <li><a href="#"> Home </a></li>
+        <li><a href="#">About Us </a></li>
+        <li><a href="/register">Sign Up</a></li>
+        <li><a href="/login">Login </a></li>
+        <li><a href="/search"><i class="fas fa-search"></i> Search</a></li>
+    </ul>
+    <i class="bi bi-three-dots"></i>
+</nav>
+
+        
+       
+            
+        
+
+        <div class="content" style="background: url(pics/new.jpg) no-repeat center center/cover;">
+            <div class="cont_bx">
+                <h1>Escape The Ordinary And Discover The Extraordinary</h1>
+                {{!-- <p> Creative taglines have the capability of capturing the attention of potential customers</p> --}}
+                <button> Start your search</button>
+            </div>
+            <div class="trip_bx">
+                <div class="search_bx">
+                    <div class="card">
+                        <h4> Location <i class="bi bi-caret-down-fill"></i></h4>
+                        <input type="text" placeholder="Enter your destination">
+                    </div>
+                    <div class="card">
+                        <h4> Date <i class="bi bi-caret-down-fill"></i> </h4>
+                        <input type="date">
+                    </div>
+                    <div class="card">
+                        <h4> People <i class="bi bi-caret-down-fill"></i></h4>
+                        <input type="number" placeholder="How many prople?">
+                    </div>
+                    <input type="button" value="Explore Now">
+                </div>
+
+                <div class="travel_bx">
+                    <h4> Countries To Travel</h4>
+                    <div class="cards">
+                        <div class="card">
+                            <h3> INDIA <img src="pics/india.png"> </h3>
+                            <img src="pics/mumbai.jpg">
+                            <div class="btn_city">
+                                <a href="">Read Now</a>
+                                <h5>Mumbai Central <br> <span> $460 </span></h5>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h3> UNITED ATATES <img src="pics/USA.png"></h3>
+                            <img src="pics/america.jpg">
+                            <div class="btn_city">
+                                <a href="">Read Now</a>
+                                <h5>New_York <br> <span> $870 </span></h5>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <h3> RUSSIA <img src="pics/russia.png"></h3>
+                            <img src="pics/russia.jpg">
+                            <div class="btn_city">
+                                <a href="">Read Now</a>
+                                <h5>Sanpitersburg <br> <span> $770 </span></h5>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h3> SPAIN <img src="pics/russia.png"></h3>
+                            <img src="pics/spain.jpg">
+                            <div class="btn_city">
+                                <a href="">Read Now</a>
+                                <h5>Barcelona <br> <span> $660 </span></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="offers">
+        <h1> Best Tour Package Offers For You</h1><br>
+        <p> Choose your best destination</p>
+        <div class="cards">
+            <div class="card">
+                <h3> Lotus-Delhi</h3>
+                <div class="img_text">
+                    <img src="pics/lotus temple.jpg">
+                    <h4> Included: Air ticket, Hotel, Breakfast, Tours, Airport Transfer</h4>
+                </div>
+                <div class="cont_bx">
+                    <div class="price">
+                        <div class="heart_art">
+                            <i class="bi bi-chat-fill"> <span>8462</span></i>
+                            <i class="bi bi-chat-fill"><span>4321</span></i>
+
+                        </div>
+                        <div class="info_price">
+                            <a href="">More Info</a>
+                            <h4>$2345</h4>
+                        </div>
+
+                    </div>
+                    <div class="dayes">5 Days <br> India </div>
+                </div>
+            </div>
+            <div class="card">
+                <h3> Burj khalifa-DXB</h3>
+                <div class="img_text">
+                    <img src="pics/burj khalifa.jpg">
+                    <h4> Included: Air ticket, Hotel, Breakfast, Tours, Airport Transfer</h4>
+                </div>
+                <div class="cont_bx">
+                    <div class="price">
+                        <div class="heart_art">
+                            <i class="bi bi-chat-fill"> <span>8000</span></i>
+                            <i class="bi bi-chat-fill"><span>4000</span></i>
+
+                        </div>
+                        <div class="info_price">
+                            <a href="">More Info</a>
+                            <h4>$2345</h4>
+                        </div>
+
+                    </div>
+                    <div class="dayes">10 Days <br> Dubai </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <h3> Pyramids-Egypt</h3>
+                <div class="img_text">
+                    <img src="pics/pyramid.jpg">
+                    <h4> Included: Air ticket, Hotel, Breakfast, Tours, Airport Transfer</h4>
+                </div>
+                <div class="cont_bx">
+                    <div class="price">
+                        <div class="heart_art">
+                            <i class="bi bi-chat-fill"> <span>8400</span></i>
+                            <i class="bi bi-chat-fill"><span>4300</span></i>
+
+                        </div>
+                        <div class="info_price">
+                            <a href="">More Info</a>
+                            <h4>$2345</h4>
+                        </div>
+
+                    </div>
+                    <div class="dayes">8 Days <br> Egypt </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <h3> Mountain-Vietnam</h3>
+                <div class="img_text">
+                    <img src="pics/vietnam.jpg">
+                    <h4> Included: Air ticket, Hotel, Breakfast, Tours, Airport Transfer</h4>
+                </div>
+                <div class="cont_bx">
+                    <div class="price">
+                        <div class="heart_art">
+                            <i class="bi bi-chat-fill"> <span>8562</span></i>
+                            <i class="bi bi-chat-fill"><span>4521</span></i>
+
+                        </div>
+                        <div class="info_price">
+                            <a href="">More Info</a>
+                            <h4>$2345</h4>
+                        </div>
+
+                    </div>
+                    <div class="dayes">7 Days <br> Vietnam </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="destination">
+        <div class="des_bx">
+            <h4> Our Destination</h4><br>
+            <p> Choose Your Next Destination</p><br>
+            <li> India</li>
+            <li> Dubai</li>
+            <li> USA</li>
+            <li> Vietnam</li>
+            <li> Brazil</li><br>
+            <h6> Include: Air Ticket, Hotel, Breakfast, Tours </h6><br>
+            <button> MORE INFO</button>
+        </div>
+        <div class="img_bx">
+            <img src="pics/plane.jpg">
+            <div class="msg">
+                <img src="pics/india.png">
+                <div class="cont">
+                    <h4>India</h4>
+                    <div class="icon">
+                        <i class="bi bi-chat-fill"> <span>8562</span></i>
+                        <i class="bi bi-chat-fill"><span>4521</span></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="msg">
+                <img src="pics/USA.png">
+                <div class="cont">
+                    <h4>USA</h4>
+                    <div class="icon">
+                        <i class="bi bi-chat-fill"> <span>8500</span></i>
+                        <i class="bi bi-chat-fill"><span>4001</span></i>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h2>
+            Subscribe & <br> get special discount
+        </h2><br>
+        <p> Lorem ipsum dolor sit , reiciendis non architecto aliquid temporibus repudiandae atque quidem nulla officiis
+            adipisci totam fugit</p>
+        <br>
+        <div class="input">
+            <input type="text" placeholder="Enter your Email Address">
+            <button> Subscribe</button>
+        </div>
+        <ul>
+            <li> 7865 <br>
+                <h6>Year Serving The Travel Industry</h6>
+            </li>
+            <li> 4567 <br>
+                <h6> Global <br> Paternship</h6>
+            </li>
+            <li> 7844 <br>
+                <h6> Industry Award Since 2022 </h6>
+            </li>
+            <li> 6000 <br>
+                <h6> Subscribe</h6>
+            </li>
+        </ul>
+    </footer>
+    <script>
+        window.onload = function() {
+  alert("Welcome to the page!");
+};
+
+    </script>
+
+</body>
+
+</html>
