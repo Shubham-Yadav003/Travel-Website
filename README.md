@@ -3,7 +3,7 @@ This is a Travel Website which facilitates travel round world by searching for f
 
 
 
-![](https://github.com/VinayThakur04/Solar-Power-Calculator/blob/main/home.png)
+![](https://github.com/Shubham-Yadav003/Travel-Website/blob/main/public/pics/i1.png)
 <hr>
 <img src="https://github.com/VinayThakur04/Solar-Power-Calculator/blob/main/gallery.png" alt="">
 <hr>
